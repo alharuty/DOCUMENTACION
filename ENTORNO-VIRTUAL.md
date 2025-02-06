@@ -11,7 +11,8 @@ Un **entorno virtual en Python** es una herramienta que te permite crear un espa
 > [!IMPORTANT]
 > Cada entorno virtual trabaja en la carpeta donde se ha creado inicialmente.
 
-> [!NOTA]
+
+> [!NOTE]
 > Es preferible como método de guía, llamar al entorno virtual igual que el proyecto o repositorio donde estamos trabajando.
 
 ## **¿Por qué usar un entorno virtual?**
