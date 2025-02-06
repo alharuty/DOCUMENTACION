@@ -32,9 +32,9 @@ Como ya tienes tu código en marcha, **sí puedes activarlo ahora sin problemas*
 Abre la terminal en la carpeta de tu proyecto y ejecuta:
 
 ```sh
-python -m venv venv
+python -m venv nombre_entorno
 ```
-Esto crea una carpeta llamada `venv` que contendrá el entorno virtual.
+Esto crea una carpeta llamada `nombre_entorno` que contendrá el entorno virtual.
 
 ---
 
@@ -49,13 +49,13 @@ Dependiendo del sistema operativo, usa uno de estos comandos:
 
 - **Mac/Linux**:
   ```sh
-  source venv/bin/activate
+  source nombre_entorno/bin/activate
   ```
 
 Cuando el entorno esté activo, verás algo así en la terminal:
 
 ```
-(venv) usuario@pc:~/mi_proyecto$
+(nombre_entorno) usuario@pc:~/mi_proyecto$
 ```
 
 ---
@@ -84,11 +84,11 @@ deactivate
 
 ---
 
-### **5️⃣ Agregar `venv` a `.gitignore`**
+### **5️⃣ Agregar `nombre_entorno` a `.gitignore`**
 Para evitar subir el entorno virtual a GitHub (no es necesario compartirlo), edita o crea un archivo `.gitignore` en la raíz del proyecto y agrega:
 
 ```
-venv/
+nombre_entorno/
 ```
 
 Con esto, puedes trabajar con un entorno virtual en tu proyecto sin afectar nada de lo que ya has hecho. 🚀
