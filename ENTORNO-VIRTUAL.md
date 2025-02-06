@@ -43,7 +43,7 @@ Dependiendo del sistema operativo, usa uno de estos comandos:
 
 - **Windows (CMD o PowerShell)**:
   ```sh
-  venv\Scripts\activate
+  nombre_entorno\Scripts\activate
   ```
   (Si usas PowerShell y da error, ejecuta `Set-ExecutionPolicy Unrestricted -Scope Process` antes de activar.)
 
