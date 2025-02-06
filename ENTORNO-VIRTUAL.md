@@ -9,8 +9,9 @@ Un **entorno virtual en Python** es una herramienta que te permite crear un espa
 
 
 > [!IMPORTANT]
-> Cada entorno virtual trabaja en la carpeta donde se ha creado inicialmente.
-> Imprescindible **ACTIVAR** el entorno virtual cada vez que vayamos a trabajar en un repositorio.
+> Cada entorno virtual trabaja en la carpeta donde se ha creado inicialmente.<br>
+> Imprescindible **ACTIVAR** el entorno virtual cada vez que vayamos a trabajar en un repositorio.<br>
+> Incluir el repositorio **nombre_entorno/** en en archivo **.gitignore**
 
 
 > [!NOTE]
