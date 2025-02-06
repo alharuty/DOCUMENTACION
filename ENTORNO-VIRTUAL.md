@@ -4,19 +4,19 @@ Un **entorno virtual en Python** es una herramienta que te permite crear un espa
 
 
 > [!CAUTION]
-> Hay que tener en cuenta que dichas dependencias están instaladas y se pueden usar SOLO en dicho entorno.<br>
-> **Es decir, si estamos en un entorno virtual y descargamos un paquete o unas dependencias, éstas solo estarán disponibles dentro de dicho entorno, y cuando salgamos del entorno no las podremos usar porque no están en Global**
+> - Hay que tener en cuenta que dichas dependencias están instaladas y se pueden usar SOLO en dicho entorno.<br>
+> - **Es decir, si estamos en un entorno virtual y descargamos un paquete o unas dependencias, éstas solo estarán disponibles dentro de dicho entorno, y cuando salgamos del entorno no las podremos usar porque no están en Global**
 
 
 > [!IMPORTANT]
-> Cada entorno virtual trabaja en la carpeta donde se ha creado inicialmente.<br>
-> Imprescindible **ACTIVAR** el entorno virtual cada vez que vayamos a trabajar en un repositorio.<br>
-> Incluir el repositorio **nombre_entorno/** en en archivo **.gitignore**
+> - Cada entorno virtual trabaja en la carpeta donde se ha creado inicialmente.<br>
+> - Imprescindible **ACTIVAR** el entorno virtual cada vez que vayamos a trabajar en un repositorio.<br>
+> - Incluir el repositorio **nombre_entorno/** en en archivo **.gitignore**
 
 
 > [!NOTE]
-> Es preferible como método de guía, llamar al entorno virtual igual que el proyecto o repositorio donde estamos trabajando.
-> Es aconsejable **desactivarlo** cada vez que vayamos a dejar de trabajar en dicho repositorio o proyecto, aunque si apagamos el ordenador éste se desactivará por sí solo.
+> - Es preferible como método de guía, llamar al entorno virtual igual que el proyecto o repositorio donde estamos trabajando.<br>
+> - Es aconsejable **desactivarlo** cada vez que vayamos a dejar de trabajar en dicho repositorio o proyecto, aunque si apagamos el ordenador éste se desactivará por sí solo.
 
 ## **¿Por qué usar un entorno virtual?**
 1. **Evita conflictos** entre dependencias de diferentes proyectos.
