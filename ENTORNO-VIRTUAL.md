@@ -5,7 +5,6 @@ Un **entorno virtual en Python** es una herramienta que te permite crear un espa
 
 > [!CAUTION]
 > Hay que tener en cuenta que dichas dependencias están instaladas y se pueden usar SOLO en dicho entorno.
-
 > *Es decir, si estamos en un entorno virtual y descargamos un paquete o unas dependencias, éstas solo estarán disponibles dentro de dicho entorno, y cuando salgamos del entorno no las podremos usar porque no están en Global*
 
 
