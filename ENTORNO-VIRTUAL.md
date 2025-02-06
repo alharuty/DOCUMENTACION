@@ -2,7 +2,17 @@
 
 Un **entorno virtual en Python** es una herramienta que te permite crear un espacio aislado para instalar paquetes y librerías sin afectar el sistema global de Python ni otros proyectos. Es especialmente útil en proyectos para garantizar que todas las dependencias sean consistentes.
 
+
+> [!CAUTION]
+> Hay que tener en cuenta que dichas dependencias están instaladas y se pueden usar SOLO en dicho entorno. 
 *Es decir, si estamos en un entorno virtual y descargamos un paquete o unas dependencias, éstas solo estarán disponibles dentro de dicho entorno, y cuando salgamos del entorno no las podremos usar porque no están en Global*
+
+
+> [!IMPORTANT]
+> Cada entorno virtual trabaja en la carpeta donde se ha creado inicialmente.
+
+> [!NOTA]
+> Es preferible como método de guía, llamar al entorno virtual igual que el proyecto o repositorio donde estamos trabajando.
 
 ## **¿Por qué usar un entorno virtual?**
 1. **Evita conflictos** entre dependencias de diferentes proyectos.
