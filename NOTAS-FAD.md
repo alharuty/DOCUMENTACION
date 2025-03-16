@@ -51,3 +51,38 @@ La disposición de la matriz de confusión es tal que las predicciones correctas
 
 <img width="470" alt="Captura de pantalla 2025-03-16 a las 12 26 07" src="https://github.com/user-attachments/assets/cf6a1f4c-4ec6-466d-ab99-6b3509248150" />
 
+**SERVICIOS DE AZURE**
+- Computer vision:
+  1. Visión:
+    1. Análisis de imágenes: Etiquetado de imágenes, descripciones, personalización de modelo...
+    2. Reconocimiento óptico de carácteres: encontrar texto dentro de imágenes
+    3. Análisis espacial: distancia entre objetos
+  2. Face:
+    1. Detección de caras
+    2. Reconocimiento facial
+- Procesamiento de lenguaje natural (NLP - PNL) :
+  1. Lenguaje:
+     1. Detección de idioma
+     2. Extracción de frases clave
+     3. Detección de entidad con nombre
+     4. Análisis de opiniones y minería de opiniones
+     5. Detección de información personal
+     6. Resúmenes
+     7. Respuesta a preguntas: chatbot
+     8. Reconocimiento del lenguaje conversacional
+     9. ...
+  2. Voz:
+     1. Texto a voz
+     2. Voz a texto
+     3. Traducción de voz
+     4. Identificación del hablante
+     5. Identificación del idioma
+     6. ...
+  3. Traductor:
+     1. Traducción de texto
+     2. Traducción de documentos
+     3. Traducción personalizada
+     4. ...
+    
+  
+**¿Qué es CLU?**: Reconocimeitno del lenguaje conversacional en Azure, sirve para crear modelos de lenguaje que interpreten el significado de las frases en una configuración conversacional. Por ejemplo, entrenar al modelo para que pueda hacer una acción que se le diga por voz, como decir "Enciende las luces" y que ésta pueda interpretarlo y realizar la acción de endender la luz. Tiene en cuenta entidades e intenciones, en este caso la entidad sería 'luz' y la intención 'encender'. Para que el modelo funcione hay que darle las diferentes entidades e intenciones, y después entrenarlo para que entienda el lenguaje de la persona y asimilar que la misma intención se puede decir de diferentes maneras, como por ejemplo 'encender' == 'activar'.
