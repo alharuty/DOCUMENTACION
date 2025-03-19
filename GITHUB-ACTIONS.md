@@ -63,3 +63,5 @@ Facilita la gestión de workflows.
 ---
 
 Este documento es una guía rápida para configurar GitHub Actions y probarlo en local con `act`. 
+
+[Ver más](https://docs.github.com/es/actions/writing-workflows/quickstart)
