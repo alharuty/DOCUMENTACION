@@ -115,3 +115,10 @@ La disposición de la matriz de confusión es tal que las predicciones correctas
 
   
 **¿Qué es CLU?**: Reconocimeitno del lenguaje conversacional en Azure, sirve para crear modelos de lenguaje que interpreten el significado de las frases en una configuración conversacional. Por ejemplo, entrenar al modelo para que pueda hacer una acción que se le diga por voz, como decir "Enciende las luces" y que ésta pueda interpretarlo y realizar la acción de endender la luz. Tiene en cuenta entidades e intenciones, en este caso la entidad sería 'luz' y la intención 'encender'. Para que el modelo funcione hay que darle las diferentes entidades e intenciones, y después entrenarlo para que entienda el lenguaje de la persona y asimilar que la misma intención se puede decir de diferentes maneras, como por ejemplo 'encender' == 'activar'.
+
+
+**NOTAS**
+- Un **indexador** convierte documentos en JSON y los envía a un motor de búsqueda para su **indexación.**
+- 
+
+
