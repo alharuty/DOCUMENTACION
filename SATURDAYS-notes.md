@@ -1,6 +1,6 @@
 ## NOTAS QUE TOMO EN EL CURSO DE FUNDAMENTOS DE LA CIENCIA DE SATURDAYS.AI
 
-La ciencia de datoos es un campo que nos permite extraer información valiosa de los datos y sacar conclusiones.
+La ciencia de datos es un campo que nos permite extraer información valiosa de los datos y sacar conclusiones.
 
 <img width="363" alt="Captura de pantalla 2025-04-02 a las 19 42 35" src="https://github.com/user-attachments/assets/31492598-befb-4064-b240-8dc8f247bada" />
 
@@ -36,10 +36,40 @@ Tener un método de recopilar datos y mantenerlos, hará que ahorremos recursos 
 6. **Modelado predictivo**: utilizamos estadística, programación o modelos de IA para responder a las preguntas que nos hemos hecho a principio del estudio.
 7. **Visualización de datos**
 
-
 Nuestro objetivo como Data Scientist es resolver problemas de la empresa utilizando datos.
-   
 
+## Matemáticas para la ciencia de datos
+Estas son algunas de las operaciones aritméticas necesarias para la limpieza y análisis de datos.
+
+#### La tendencia central:
+Es como la medida estimada del valor central de los datos ó valor que más se repite, por ejemplo la altura media a la que vuelan los aviones. Hay 2 métodos para determinar este punto medio, y debemos optar por uno u otro dependendiendo del caso y del tipo de datos que estemos utilizando. Hay que destacar que estos 2 valores a veces pueden coincidir pero no es seguro:
+1. **La media**: Es la medida de tendencia central más conocida y se obtiene sumando todos los valores numéricos y dividiendo entre el total de los valores.
+
+> [!NOTE]
+>
+> Los valores extremos pueden afectar a la media
+
+2. **La mediana**: Es exactamente el valor central del conjunto de datos. Los datos se ordenan de menor a mayor y el conjunto se divide en dor partes con el mismo número de datos. Si la cantidad de elementos es impar, se elije como mediana el valor central que no corresponde a niguno de los conjuntos. Si la cantidad de elementos es par, se calcula el promedio de los dos elementos centrales limítrofes.
+
+> [!NOTE]
+>
+> Los valores extremos no afectan a la media
+
+#### La dispersión:
+La dispersión mide la variación de los datos; su grado de agrupación (o no) con respecto a su tendencia central.
+
+1. **Desviación estandar ó varianza**
+2. **Rangos intercuartiles**
+3. **Desviación media absoluta (DMA)**
+
+> [!NOTE]
+> **TERMINOLOGÍA DE CIENCIA DE DATOS**
+> 1. **Exactitud**: mide la proximidad de las mediciones al valor real
+> 2. **Precisión**: mide la dispersión de las mediciones
+<img width="300" alt="Captura de pantalla 2025-04-03 a las 13 56 28" src="https://github.com/user-attachments/assets/b903993e-b1ae-4ab0-8e73-e7ac3cacfbc9" /><br>
+Por ejemplo, una máquina mal calibrada podría ser precisa en sus mediciones, pero no exacta.
+> 3. **Inducción**: consiste en extrapolar características generales de un evento o suceso particular
+> 4. **Deducción**: consiste en definir las cualidades o propiedades que se presentarán a partir de características generales específicas
 
 
 
