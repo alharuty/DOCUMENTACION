@@ -119,6 +119,15 @@ La disposición de la matriz de confusión es tal que las predicciones correctas
 
 **NOTAS**
 - Un **indexador** convierte documentos en JSON y los envía a un motor de búsqueda para su **indexación.**
-- 
 
+
+### Diferencia entre CARACTERÍSTICA Y ETIQUETA
+Las características representan atributos observados y las etiquetas representan predicciones.<br>
+**Características (features):** Son los atributos o variables de entrada que se utilizan para hacer predicciones. Pueden ser cualquier tipo de información relevante sobre los datos de entrada.
+
+**Etiquetas (labels):** Son los valores de salida o respuestas correctas en un problema de aprendizaje supervisado. Se utilizan para entrenar un modelo y evaluar su desempeño.
+
+Por ejemplo en un modelo de predicción de precios de casas:<br>
+  - Características: número de habitaciones, tamaño en metros cuadrados, ubiación,etc.
+  - Etiqueta: precio de la casa
 
