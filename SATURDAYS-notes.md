@@ -72,7 +72,14 @@ Por ejemplo, una máquina mal calibrada podría ser precisa en sus mediciones, p
 > 4. **Deducción**: consiste en definir las cualidades o propiedades que se presentarán a partir de características generales específicas
 
 
-
+#### La probabilidad incondicionada:
+Es el estudio de las frecuencias o la aparición de eventos o efectos de forma directa, es decir, sin considerar su dependencia de otros eventos. Se calcula mediante la simple división denominada regla de Laplace, que calcula la probabilidad como se mencionó anteriormente.<br>
+<img width="266" alt="Captura de pantalla 2025-04-03 a las 15 15 12" src="https://github.com/user-attachments/assets/aafec852-38ba-446a-ba6b-185095774d6f" />
+El resultado siempre suele ser un número entre 0 y 1, pero en ocasiones puede darse en formate porcentaje.<br>
+Por ejemplo, tenemos una bolsa con 8 bolas azules y 16 bolas amarillas.
+- Probabilidad de sacar una bola azul = 8/24 bolas en total = 0,33 = 33,3 % 
+- Probabilidad de sacar una bola amarilla 16/24 bolas en total = 0,66 = 66,6%
+- Probabilidad de sacar una bola roja = 0/24 bolas en total = 0 = 0%
 
 
 
