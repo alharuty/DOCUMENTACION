@@ -108,10 +108,6 @@ La disposición de la matriz de confusión es tal que las predicciones correctas
         • Creación de experiencias del cliente y productos comerciales atractivos
         • Control total sobre el diseño y el desarrollo
     4. Azure AI Studio: Inteligencia artificial de Azure Studio es un portal de desarrollo PaaS (plataforma como servicio) para desarrolladores de software profesionales que le proporciona control total sobre el modelo de lenguaje que quiere usar, incluida la capacidad de ajustar el modelo con datos propios.
-   
-       
-
-
 
   
 **¿Qué es CLU?**: Reconocimeitno del lenguaje conversacional en Azure, sirve para crear modelos de lenguaje que interpreten el significado de las frases en una configuración conversacional. Por ejemplo, entrenar al modelo para que pueda hacer una acción que se le diga por voz, como decir "Enciende las luces" y que ésta pueda interpretarlo y realizar la acción de endender la luz. Tiene en cuenta entidades e intenciones, en este caso la entidad sería 'luz' y la intención 'encender'. Para que el modelo funcione hay que darle las diferentes entidades e intenciones, y después entrenarlo para que entienda el lenguaje de la persona y asimilar que la misma intención se puede decir de diferentes maneras, como por ejemplo 'encender' == 'activar'.
@@ -119,7 +115,15 @@ La disposición de la matriz de confusión es tal que las predicciones correctas
 
 **NOTAS**
 - Un **indexador** convierte documentos en JSON y los envía a un motor de búsqueda para su **indexación.**
-
+- Para evaluar un modelo de clasificación usamos la métrica de **precisión.**
+- ¿Para que sirve la **función de perdida**? Para ver la diferencia entre el valor predecido y el valor actual.
+- Después de logearse en Azure Studios, lo primero que hacemos es asociar un recurso al studio.
+- ¿Qué es un recurso en Azure? Es un pack de diferentes servicios de Azure en un mismo recurso.
+- Computer vision manipula y analiza los valores de **píxeles** en una imágen.
+- ¿Qué resultados puede dar Read API? Resultados en páginas, lineas y palabras.
+- What is the purpose of vector-based embeddings?  To represent semantic meaning of text tokens
+- What capability of Azure OpenAI Service helps mitigate harmful content generation at the Safety System level? Content filters
+- 
 
 ### Diferencia entre CARACTERÍSTICA Y ETIQUETA
 Las características representan atributos observados y las etiquetas representan predicciones.<br>
