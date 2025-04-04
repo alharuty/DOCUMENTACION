@@ -82,5 +82,37 @@ Por ejemplo, tenemos una bolsa con 8 bolas azules y 16 bolas amarillas.
 - Probabilidad de sacar una bola roja = 0/24 bolas en total = 0 = 0%
 
 
+**¿Cuáles son los errores con los que tendremos que lidiar para hacer limpieza de datos?**
+  - Errores de formato => fecha: Abril/34/2025
+  - Errores de coherencia => fecha: Abril/34/2025
+  - Valores faltantes
+  - Valores atípicos => edad: -4
+**Vamos a analizarlos**
+
+1. **Valores faltantes**: Es una de las características más típicas en los conjuntos de datos. Pero, cómo gestionamos estos valores faltantes? Pues depende del caso.
+   - Eliminarlos
+   - Ignorarlos
+   - Rellenarlos con null
+   - Rellenarlos con media o mediana
+
+<img width="500" alt="Captura de pantalla 2025-04-04 a las 17 58 15" src="https://github.com/user-attachments/assets/9f7b9977-b3f9-4c43-ad29-3918f3608ee9" />
+
+2. **Valores atípicos**: Son valores numericamente alejados del resto de valores que tiene dicha columna, y si los tenemos en cuenta a la hora de estudiar y sacar conclusiones sobre los datos, nos pueden llevar a errores o cifras que están alejados de la "realidad". Por ejemplo un valor atípico sería que una persona mida 175 metros.
+En un diagrama de caja, se puede ver los outliers como valores atípicos ya que se alejan de la distribución en una variable. 
+<img width="725" alt="Captura de pantalla 2025-04-04 a las 18 02 32" src="https://github.com/user-attachments/assets/fd90fd53-4a5f-4c6d-9dfc-a9c6057695ff" />
+También suele ocurrir, que 2 tipos de variables por sí solos no sean atípicos, pero juntos sí, porejemplo una persona que mida 1.85cm y que pese 45kg, son valores que no concuerdan, este tipo de valores son más difíciles de identificar. ¿Qué podemos hacer con ellos?
+  - Si se puede corregir, por ejemplo en el caso de la persona que su alutra son 175 m, podemos entender que es en cenímetros, y podemos cambiar de 175m a 1,75m.
+  - Si no hay posibilidad de corregir, podemos eliminarlos o reemplazarlos.
+
+<img width="500" alt="Captura de pantalla 2025-04-04 a las 18 07 28" src="https://github.com/user-attachments/assets/5f3760d9-4b95-42ec-9681-c961f0e4a54b" />
+
+En resumen, podemos decir que los valores atípicos son valores extraños o atípicos. Cuando provienen de errores, deben corregirse y, si no es posible, eliminarse. Por otro lado, si son valores legítimos, debemos conservarlos a menos que el contexto o el modelo que vayamos a utilizar nos aconsejen eliminarlos o modificarlos de alguna manera.
+
+
+
+
+
+
+
 
 
