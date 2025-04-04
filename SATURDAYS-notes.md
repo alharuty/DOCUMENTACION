@@ -81,6 +81,8 @@ Por ejemplo, tenemos una bolsa con 8 bolas azules y 16 bolas amarillas.
 - Probabilidad de sacar una bola amarilla 16/24 bolas en total = 0,66 = 66,6%
 - Probabilidad de sacar una bola roja = 0/24 bolas en total = 0 = 0%
 
+#### Tipos de datos
+<img width="300" alt="Captura de pantalla 2025-04-04 a las 18 20 38" src="https://github.com/user-attachments/assets/18b57ca7-076b-4cfc-813f-33a7e39a3f0d" />
 
 **¿Cuáles son los errores con los que tendremos que lidiar para hacer limpieza de datos?**
   - Errores de formato => fecha: Abril/34/2025
@@ -103,15 +105,49 @@ En un diagrama de caja, se puede ver los outliers como valores atípicos ya que 
 También suele ocurrir, que 2 tipos de variables por sí solos no sean atípicos, pero juntos sí, porejemplo una persona que mida 1.85cm y que pese 45kg, son valores que no concuerdan, este tipo de valores son más difíciles de identificar. ¿Qué podemos hacer con ellos?
   - Si se puede corregir, por ejemplo en el caso de la persona que su alutra son 175 m, podemos entender que es en cenímetros, y podemos cambiar de 175m a 1,75m.
   - Si no hay posibilidad de corregir, podemos eliminarlos o reemplazarlos.
-
+Los outliers son valores atípicos que estan lejos de la realidad.
 <img width="500" alt="Captura de pantalla 2025-04-04 a las 18 07 28" src="https://github.com/user-attachments/assets/5f3760d9-4b95-42ec-9681-c961f0e4a54b" />
 
 En resumen, podemos decir que los valores atípicos son valores extraños o atípicos. Cuando provienen de errores, deben corregirse y, si no es posible, eliminarse. Por otro lado, si son valores legítimos, debemos conservarlos a menos que el contexto o el modelo que vayamos a utilizar nos aconsejen eliminarlos o modificarlos de alguna manera.
 
+**¿Qué son las distribuciones de probabilidad?**
 
 
+Podemos decir que hay 2 tipos de distribuciones:
+  - **Distribución discreta**: cuando los valores son exactas, no puede ser 1,25 o 1,75. Son valores exactos y entre uno y otro siempre hay la misma diferencia. Por ejemplo las potencias de fuego de una vitrocerámica, puede ser 1, 2, 3, 4, 5, 6. Y nunca un número con decimales ni que se pueda modificar.
+  - **Distribución continua**: es lo contrario a discreta y se puede cojer el rango que se quiera, por ejemplo en una cocina de gas, la potencia del fuego puede cambiar desde el mínimo hasta el máximo.
 
+Si queremos pasar de discreta a continua, se llama interpolación.
+Si queremos pasar de continua a discreta, se llama discretización o modulación
 
+<img width="400" alt="Captura de pantalla 2025-04-04 a las 18 34 57" src="https://github.com/user-attachments/assets/88e070a6-59bf-4a9c-bf35-d10baea4d490" />
+
+**¿Cuáles son los métodos de muestreo?**
+
+1. **Muestreo aleatorio simple**: todos los individuos de la población tienen la misma probabilidad de ser seleccionados para formar parte de la muestra.
+2. **Muestreo sistemático:** Se elige un individuo cada cierto número de pasos. Es fácil de aplicar, pero puede generar sesgos si hay patrones en la población.
+3. **Muestreo estratificado:** Se divide la población en subgrupos homogéneos y se toma una muestra de cada uno. Permite representar bien la población, pero requiere conocer previamente los subgrupos.
+
+**Cómo evitar los sesgos?**
+  - Definir reglas de muestreo pobres y flexibles
+  - Omitir individuos pertenecientes a grupos de dificil acceso
+  - Incorporar datos históricos antigos al estudio
+
+**¿Qué son Normalización VS Estandarización?**
+Son técnicas de escalado de características.
+  - **Normalización:** Su objetivo principal es reescalar cada característica para que su rango esté entre 0 (valor mínimo) y 1 (valor máximo).
+    
+<img width="300" alt="Captura de pantalla 2025-04-04 a las 18 51 28" src="https://github.com/user-attachments/assets/fefdd39d-9a1d-4367-a407-df238d03d001" />
+
+  - **Estandarización**: Los datos se centrarán en el valor 0 y tendrán una desviación estándar unitaria.
+
+<img width="167" alt="Captura de pantalla 2025-04-04 a las 18 52 35" src="https://github.com/user-attachments/assets/cf01c524-e0a8-46f5-a7b6-26d0fe921580" />
+
+**¿Cómo saber quñe técnica usar**
+
+- La normalización es útil cuando se sabe que la distribución de los datos no sigue una distribución gaussiana. Esto puede ser útil en algoritmos que no asumen ninguna distribución de los datos.
+
+- La estandarización, por otro lado, puede ser útil en casos donde los datos siguen una distribución gaussiana. Sin embargo, esto no tiene por qué ser necesariamente cierto. Además, a diferencia de la normalización, la estandarización no tiene un rango límite. Por lo tanto, incluso si hay valores atípicos en los datos, estos no se verán afectados por la estandarización.
 
 
 
