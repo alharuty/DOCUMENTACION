@@ -150,5 +150,44 @@ Son técnicas de escalado de características.
 - La estandarización, por otro lado, puede ser útil en casos donde los datos siguen una distribución gaussiana. Sin embargo, esto no tiene por qué ser necesariamente cierto. Además, a diferencia de la normalización, la estandarización no tiene un rango límite. Por lo tanto, incluso si hay valores atípicos en los datos, estos no se verán afectados por la estandarización.
 
 
+**¿QUÉ ES NORMALIDAD?**
+Es la forma en que se distribuyen los datos numéricos. La distribución normal es una distribución de probabilidad que se caracteriza por ser simétrica alrededor de una media. Si el valor p es menor que el nivel de significancia (generalmente α=0,05), se rechaza la hipótesis nula y se concluye que los datos no siguen una distribución normal. Por el contrario, si el valor p es mayor que α, se concluye que no se puede rechazar la hipótesis nula y se asume que los datos siguen una distribución normal.
+Las pruebas más comunes son:
+- Kolmogorov-Smirnov
+- Shapiro-Wilk: es uno de los más eficaces para contrastar la normalidad
+
+**¿QUÉ ES HOMOCEDASTIICIDAD?**
+Es la igualdad de varianzas entre los grupos a comparar. la hipótesis nula supone la igualdad de varianzas en los diferentes grupos de datos. Por lo tanto, valores p por debajo del nivel de significancia indicarán heterocedasticidad.
+Las pruebas más comunes son:
+- Levene
+- Flinger-Killeen
+
+**MAPAS DE CORRELACIÓN**
+Una forma muy útil y práctica de buscar correlación es el diagrama de dispersión o gráfico de burbujas. Se trata de un tipo de diagrama matemático que utiliza coordenadas cartesianas para mostrar los valores de dos variables de un conjunto de datos.
+ 
+<img width="600" alt="Captura de pantalla 2025-04-08 a las 13 58 03" src="https://github.com/user-attachments/assets/8441df63-56bf-46d5-ab8a-257e248aaa44" />
+
+En un mapa de correlación puede tener valores entre -1 y 1:
+- Los extremos indican una correlación perfecta (Pearson)
+- 0 indica una ausencia de correlación
+- El signo es negativo cuando valores altos de una variable se asocian con valores bajos de la otra
+- El signo es positivo cuando ambas variables tienden a aumentar o disminuir simultáneamente
+
+
+**FUNDAMENTOS DE REGRESIÓN LINEAL**
+Sirve para determinar si existe alguna relación entre 2 ó más variables.
+<img width="600" alt="Captura de pantalla 2025-04-08 a las 14 11 51" src="https://github.com/user-attachments/assets/5c23360f-b4bf-4ef9-a275-973538934b81" />
+Tiene 2 tipos de variables:
+- y : variable explicada, dependiente o endógena
+- x : variable explicativa, independiente o exógea
+
+Las relaciones entre dos variables pueden ser de dos tipos:
+1) Funcional (o determinista): cuando existe una fórmula matemática que permite calcular los valores de una de las variables a partir de los valores que toma la otra.
+2) Estadística (o estocástica): cuando no existe una expresión matemática que las relacione exactamente.
+
+**¿POR QUÉ ES IMPORTANTE LA VISUALIZACIÓN DE DATOS?**
+Aprovechamos la capacidad de la percepción visual humana para trnasmitir conocimiento. Centramos la atención del usuario en lo relevante e importante, para que genere más comprensión.
+
+
 
 
