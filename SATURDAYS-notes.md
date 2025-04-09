@@ -170,7 +170,7 @@ Una forma muy útil y práctica de buscar correlación es el diagrama de dispers
 En un mapa de correlación puede tener valores entre -1 y 1:
 - Los extremos indican una correlación perfecta (Pearson)
 - 0 indica una ausencia de correlación
-- El signo es negativo cuando valores altos de una variable se asocian con valores bajos de la otra
+- El signo es negativo cuando un valor sube y el otro baja
 - El signo es positivo cuando ambas variables tienden a aumentar o disminuir simultáneamente
 
 
@@ -186,8 +186,7 @@ Las relaciones entre dos variables pueden ser de dos tipos:
 2) Estadística (o estocástica): cuando no existe una expresión matemática que las relacione exactamente.
 
 **¿POR QUÉ ES IMPORTANTE LA VISUALIZACIÓN DE DATOS?**
-Aprovechamos la capacidad de la percepción visual humana para trnasmitir conocimiento. Centramos la atención del usuario en lo relevante e importante, para que genere más comprensión.
-
+Aprovechamos la capacidad de la percepción visual humana para trnasmitir conocimiento. Centramos la atención del usuario en lo relevante e importante, para que genere más comprensión. Además, para una mejor interpretación, es importante elegir el correcto tipo de gráfico, de lpo contrario puede llevar a confusiones y malinterpretaciones de los datos.
 
 
 
