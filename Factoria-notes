@@ -1,0 +1,9 @@
+# Ciencia de datos 
+
+Librerías que podemos usar para operaciones matemáticas:
+- [SymPay](https://docs.sympy.org/latest/tutorials/intro-tutorial/features.html)
+- [NumPy](https://numpy.org/doc/stable/user/index.html#user)
+- [Scipy](https://docs.scipy.org/doc/scipy/tutorial/index.html#user-guide)
+- [math](https://docs.python.org/es/3.10/library/math.html)
+  - factorial: dividir un número por todos los números hasta llegar a 0
+
