@@ -49,4 +49,36 @@ Una vez configurado, veremos la línea de resultados, el color azul es los datos
 ¿Cómo mejorar y optimizar el modelo de previsión?
 1. Aumentar el periodo de histórico: Usar un dataset con datos de un tiempo más prolongado
 2. Ajustar la granulidad: analizar si es mejor trabajar con datos diarios, semanales o mensuales
-3. Evaluar el modelo: utilizar medidas de precisión como el Error Absoluto Medio (MAE) o el Error Cuadrático Medio (MSE) para evaluar y ajustar el modelo. 
+3. Evaluar el modelo: utilizar medidas de precisión como el Error Absoluto Medio (MAE) o el Error Cuadrático Medio (MSE) para evaluar y ajustar el modelo.
+
+**Crear visuals automáticamente con IA y NLP en PowerBI**
+Este mecanismo de PowerBI llamado Q&A, nos permite realizar preguntas en lenguaje natural como "Muéstrame el gráfico de barras de ingresos por región" y el sistema se encarga de interpetar esta consulta, realizar operaciones y devolver la correspondiente información de forma rápida, automática y visual. Esta función nos ahorra tiempo y permite que personas con poca experiencia en PowerBi puedan obtener buenos y valiosos resultados.
+
+<img src="https://github.com/user-attachments/assets/576939fe-4dd5-43ef-95a6-dfa00c22b8ea" width="300px">
+
+**Detección de anomalías**
+Es como una forma de detectar posibles "errores" o ouliers a lo largo del tiempo. Es decir, analiza todos los datos y por ejemplo si en una tienda online, en un mes ve que hay unas cifras muy diferentes a otros años, nos saltará una desviación y proporcionará explcaciones potenciales basadas en los datos anteriores. Es una herramienta muy poderosa que permite a los analistas identificar y abordar irregularidades en los datos de manera eficaz.
+
+Se puede ajustar esto haciendo click encima de alguna gráfica > Visualizaciones > Lupa > Buscar anomalías
+<img src="https://github.com/user-attachments/assets/97f6cbdb-60c7-4e92-a850-d4831c3ec9b5" width="300px">
+
+**Key influencers (elementos influyentes)**
+Es una herramienta que mediante IA permite identificar los factores que más influyen en un resultado específico.
+
+<img src="https://github.com/user-attachments/assets/b1d25b43-2fd5-4000-84ad-7de686bb8bcd" width="300px">
+
+**Esquema jerárquico**
+Es una forma fácil y rápida de entender cuáles son las mejores variables que tenemos. Es decir, si tenemos una tienda (online y tienda presencial) en varios países con diferentes métodos de envío. Podemos usar el esquema jerárquico, insertamos en "Analizar" nuestra columna "ventas finales" y en "Explicar por" todas las variables que queramos tener en cuenta. 
+
+<img src="https://github.com/user-attachments/assets/a33ecadf-1f57-4793-89cd-26253bda76d2" width="300px">
+
+<img src="https://github.com/user-attachments/assets/d2f4cc9a-4ffd-49d0-bd18-748ef57e7a54" width="300px">
+
+Ahora que lo tenemos configurado, nos devolverá un esquema:
+
+<img src="https://github.com/user-attachments/assets/3240f116-2b22-412b-ac38-1e5b7340732f" width="300px">
+
+Este esquema nos dice que, del total de nuestras ventas, elmétodo de envío más utilizado es "Standard Class" y se envía al Estado de "California" y más específicamente a la ciudad de "Los Ángeles". Lo que nos da una muestra clara de donde podemos invertir más nuestros esfuerzos para generar más. 
+
+
+
