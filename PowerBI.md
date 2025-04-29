@@ -51,6 +51,8 @@ Una vez configurado, veremos la línea de resultados, el color azul es los datos
 2. Ajustar la granulidad: analizar si es mejor trabajar con datos diarios, semanales o mensuales
 3. Evaluar el modelo: utilizar medidas de precisión como el Error Absoluto Medio (MAE) o el Error Cuadrático Medio (MSE) para evaluar y ajustar el modelo.
 
+[Aprender más sobre previsiones aquí](https://www.youtube.com/watch?v=jDJeMTKfYIk&t=245s)
+
 **Crear visuals automáticamente con IA y NLP en PowerBI**
 Este mecanismo de PowerBI llamado Q&A, nos permite realizar preguntas en lenguaje natural como "Muéstrame el gráfico de barras de ingresos por región" y el sistema se encarga de interpetar esta consulta, realizar operaciones y devolver la correspondiente información de forma rápida, automática y visual. Esta función nos ahorra tiempo y permite que personas con poca experiencia en PowerBi puedan obtener buenos y valiosos resultados.
 
