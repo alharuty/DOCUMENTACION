@@ -130,5 +130,15 @@ Azure permite la administración de diferentes tipos de bases de datos relaciona
 | **Azure SQL Edge**             | Motor embebido   | Escenarios IoT y procesamiento en el borde        | Optimizado para tiempo real y análisis local en dispositivos | Limitado (enfocado a IoT)              |
 
 
+### Servicios de bases de datos de código abierto en Azure
+
+Azure ofrece servicios gestionados para bases de datos relacionales de código abierto populares como MySQL, MariaDB y PostgreSQL, facilitando la migración de aplicaciones locales a la nube sin cambios significativos.
+
+| Servicio                          | Descripción y ventajas principales                                                                                                                                                  |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Azure Database for MySQL**      | PaaS basado en MySQL Community. Alta disponibilidad, escalabilidad, seguridad y backups automáticos. Pago por uso.                                                                  |
+| **Azure Database for MariaDB**    | PaaS basado en MariaDB Community. Gestión total por Azure, alta disponibilidad, seguridad, escalabilidad y backups automáticos.                                                     |
+| **Azure Database for PostgreSQL** | PaaS basado en PostgreSQL. Alta disponibilidad, escalabilidad, seguridad y supervisión. Algunas extensiones avanzadas no disponibles. Soporta servidor flexible para mayor control. |
+
 
 
