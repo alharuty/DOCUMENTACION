@@ -40,7 +40,7 @@ La normalización es el proceso de diseño de esquemas que minimiza la duplicaci
 
 Cada entidad representada en los datos (cliente, producto, pedido de ventas y elemento de linea) se alma ena en su propia tabla y cada atributo discreto de esas entidades se encuentra en su propia columna. Con estos pasos eliminaríamos duplicados, y si por ejemplo un cliente neesita cambiar su dirección, lo cambiaríamos solo en la tabla "Customer" y sus respectivas columnas "Adress" y "City".
 
-### ¿Qué es SQL?
+### ¿Qué es SQL/Bases de datos RELACIONALES?
 
 SQL (Structured query language) es el lenguaje estándar para os sistemas de administración de bases de datos relaciones. Se usan para actualizar, recuperar, eliminar datos de la base de datos. Algunos sistemas que utilian SQL son:
 1. Microsoft SQL Server
@@ -119,4 +119,16 @@ Index no es lo mismo que ID:
 | ¿Acelera búsquedas?          | Solo si se indexa     | Sí, ese es su propósito                       |
 | ¿Se actualiza con los datos? | Sí                    | Sí, pero tiene un coste extra                 |
 | ¿Se crea con `CREATE TABLE`? | Sí (como una columna) | No necesariamente, se crea con `CREATE INDEX` |
+
+Azure permite la administración de diferentes tipos de bases de datos relacionales: SQL Server, PostgreSQL y MySQl. Las opciones SQL server de Azure son:
+
+| Opción                         | Tipo de Servicio | Uso Principal                                     | Ventajas Clave                                               | Nivel de Compatibilidad con SQL Server |
+| ------------------------------ | ---------------- | ------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------- |
+| **SQL Server en Azure VM**     | IaaS             | Migración *lift-and-shift* desde entornos locales | Control total, configuración personalizada                   | Total                                  |
+| **Azure SQL Managed Instance** | PaaS             | Modernización con compatibilidad avanzada         | Administración automática, alta compatibilidad               | Casi total                             |
+| **Azure SQL Database**         | PaaS             | Nuevas aplicaciones cloud-native                  | Escalable, alta disponibilidad, mantenimiento automatizado   | Parcial (no todas las características) |
+| **Azure SQL Edge**             | Motor embebido   | Escenarios IoT y procesamiento en el borde        | Optimizado para tiempo real y análisis local en dispositivos | Limitado (enfocado a IoT)              |
+
+
+
 
