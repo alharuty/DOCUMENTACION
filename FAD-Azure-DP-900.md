@@ -142,3 +142,22 @@ Azure ofrece servicios gestionados para bases de datos relacionales de código a
 
 
 
+### Análisis a gran escala
+
+Las grandes volúmenes de datos, se cargan por lotes en flujos en tiempo y real y se almacenan en un lago de datos desde el que se usan motores de procesamiento distribuido como Apache Spart para procesarlos. Los elementos de análisis a gran escala son:
+
+- **Ingesta y procesamiento de datos:** Se extraen, transforman o cargan datos desde diversas fuentes para analizarlos eficientemente, ya sea por lotes o en tiempo real.
+- **Almacén de datos analíticos:** Se almacenan grandes volúmenes de datos en sistemas diseñados para análisis, como lagos de datos, almacenes relacionales o soluciones híbridas.
+- **Modelo de datos analíticos:** Se estructuran datos en modelos agregados (como cubos) para facilitar informes y análisis interactivos.
+- **Visualización de datos:** Se presentan datos mediante informes, gráficos y paneles que permiten análisis visuales y de autoservicio.
+
+**¿Qué servicio de Microsoft Azure usar para la ingesta de datos a gran escala?**
+- **Azure Data Factory** : Para un componente de canalización
+- **Microsoft Fabric**: Administrar todos los componentes en una area de trabajo unificada
+
+
+Un **ALMACENAMIENTO DE DATOS** es una base relacional diseñada para análisis, donde los datos se organizan en **tablas de hechos** relacionadas con **tablas de dimensiones** en un esquema de estrella (o copo de nieve), lo que permite consultas eficientes con SQL sobre datos agregados.
+
+Un **LAGO DE DATOS** es un almacén de archivos en un sistema distribuido que permite almacenar datos en bruto (estructurados o no) sin esquema previo, aplicándolo solo al leerlos para análisis mediante herramientas como Spark o Hadoop.
+
+
