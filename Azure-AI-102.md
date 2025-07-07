@@ -112,13 +112,142 @@ Se puede usar **Foundry Content Safety** Para garantizar la seguridad y moderar 
 Lo que hace es definir un nivel de gravedad para cada categoría para determinar si el contenido debe bloquearse, enviarse a un moderador o aprobarse automáticamente. Hay que tener claro que es posible que no siempre detecte los contenidos dañinos, por lo que hay que comparar su rendimiento con las métricas de accuracy con VP, FP, VN, FN.
 
 
+## Módulo 2: Desarrollo de soluciones de Computer Vision de Azure
 
+Con el servicio de Vision de Azure Ai, podemos usar modelos ya entrenados para analizar imágenes y extraer información de ellas. La visión artifical es cuando el software interpresa la información visual, como imágenes o videos. Podemos usar Azure AI Vision para implementar Computer Vision con las siguientes opciones:
 
+- Análisis de imágenes
+- Reconocimiento óptico de caracteres (OCR)
+- Detección y análisis de caras
+- Análisis de videos
 
+### 2.1. Análisis de imágenes
 
+Para conectar al punto de conexión del recurso, debemos ir a Azure Portal o Azure AI Foundry, y buscar una dirección URL similar al siguiente: https://<resource_name>.cognitiveservices.azure.com/ y autenticar la aplicación cliente para poder usar la conexión.
+Se puede conectar mediante **Autenticación basada en claves o Autenticación de Microsoft Entra ID.**
 
+```python
+from azure.ai.vision.imageanalysis import ImageAnalysisClient
+from azure.ai.vision.imageanalysis.models import VisualFeatures
+from azure.core.credentials import AzureKeyCredential
 
+client = ImageAnalysisClient(
+    endpoint="<YOUR_RESOURCE_ENDPOINT>",
+    credential=AzureKeyCredential("<YOUR_AUTHORIZATION_KEY>")
+)
 
+result = client.analyze(
+    image_data=<IMAGE_DATA_BYTES>, # Binary data from your image file
+    visual_features=[VisualFeatures.CAPTION, VisualFeatures.TAGS],
+    gender_neutral_caption=True,
+)
+```
+
+Las características visuales disponibles en VisualFeatures son: **TAGS, OBJECTS, CAPTION, DENSE_CAPTIONS, PEOPLE, SMART_CROPS, READ** y este método devuelve un JSON con toda la información solicitada.
+
+### 2.2. Leer texto en imágenes
+
+Azure AI Vision Image Analysis service usa algoritmos para procesar imágenes y devolver información. En este módulo se explica cómo usar la API de análisis de imágenes para el reconocimiento óptico de caracteres (OCR). Hay varios servicios que extraen texto de imágenes:
+
+- **Azure AI Visión:**
+  - Ubicación de texto y extracción de documentos escaneados: leer texto en etiquetas, menús, tarjetas de presentación...
+  - Buscar y leer texto en fotografía: señales de tráfico, nombres de calles...
+  - Administración de recursos digitales (DAM): descrpción o categorización de un aimagen, catalogar indexar o analizar grandes volúmenes de imágenes...
+
+- **Inteligencia de documentos de Azure AI:** extrae información de documentos digitales complejos. Extrae texto, pares clave-valor, tablas, procesamiento de formularios, modelos precompilados, modelos personalizados...
+
+- **Descriptión del contenido de Azure AI:** (Azure AI Content Understanding) se ocupa de la extracción de contenidos multimodales y escenarios de análisis de contenido personalizados...
+
+### 2.3. Detección, análisis y reconocimiento de caras (Azure AI Face)
+
+Es la capacitdad de las aplicaciones para detectar caras humanas, analizar rasgos faciales y emociones e identificar individuos en imágenes:
+- Detección de caras
+- Análisis de atributos faciales:
+  - Posición de la cabeza
+  - Gafas
+  - Máscara
+  - Desenfoque
+  - Ruido visual
+  - Objetos que ocultan la cara
+  - Accesorios como gafas, gorros, etc
+  - QualityForRecognition (bajo, medio, alto)
+- Ubicación de punto de referencia facial,
+- Comparación de caras
+- Reconocimiento facial
+- Vivacidad facial, para detectar videos o imágenes falsas
+
+Consideraciones de inteligencia artificial responsable para soluciones basadas en caras:
+
+- Privacidad y seguridad de los datos
+- Transparencia
+- Equidad e inlusión
+
+  
+### 2.4. Clasificación de imágenes
+
+La clasificación de imágenes se usa para determinar el asunto principal de una imagen. Por ejemplo, un sistema de pago automático en una tienda de comestibles podría usar una cámara para escanear cada artículo que un cliente agrega a su carrito y usar la clasificación de imágenes para identificar el producto en la imagen.
+
+el servicio Custom Vision de Azure AI nos permite crear nuestros propios modelos de Computer Visión y para ello necesitramos 2 servicios:
+
+- Custom Visión de Azure AI de entrenamiento
+- Custom Vision de Azure AI para generar predicciones
+
+Además podemos usar el [Portal de Custom Vision](https://www.customvision.ai/) para entrenar, publicar y probar modelos.
+
+La clasificación de imágenes es una técnica de Computer Vision en la que se entrena un modelo para predecir una etiqueta de clase para una imagen en función de su contenido, por ejemplo pasándole imágenes de frutas que el modelo sepa predecir de qué fruta se trata. 
+<img width="400" alt="Captura de pantalla 2025-07-07 a las 13 31 12" src="https://github.com/user-attachments/assets/f47e5d59-3ccf-453e-86d9-e54a2e5f0b37" />
+
+Normalmente, la etiqueta de clase se relaciona con el asunto principal de la imagen. Para poder usar el portal de Custom visión se puede seguir estos pasos:
+- Cree un proyecto de clasificación de imágenes para el modelo y asócielo a un recurso de entrenamiento.
+- Cargue imágenes y asigne etiquetas de clase a ellas.
+- Revise y edite imágenes etiquetadas.
+- Entrenar y evaluar un modelo de clasificación.
+- Pruebe un modelo entrenado.
+- Publique un modelo entrenado en un recurso de predicción.
+- Usar el SDK de Azure AI Custom Vision para desarrollar una aplicación cliente que envíe nuevas imágenes que se van a clasificar.
+
+Para conectarse a Custom Visión de Azure AI desde una aplicación cliente necesitaremos: El punto de conexión y la clave del recurso de predicción de Custom Vision, el identificador del proyecto de clasificación de imágenes y el nombre del modelo implementado.
+
+### 2.5. Detección de objetos en imágenes
+
+La detección de objetos se usa para ubicar e identificar objetos en las imágenes. Por ejemplo, un sistema automatizado de caja en una tienda de comestibles podría usar una cámara para supervisar una cinta transportadora en la que puede haber varios artículos diferentes en todo momento. El sistema podría utilizar la detección de objetos para identificar qué elementos están en la cinta y dónde aparecen en la imagen.
+
+<img width="400" alt="Captura de pantalla 2025-07-07 a las 13 32 54" src="https://github.com/user-attachments/assets/a5a87a7c-4f69-403a-ae88-fcb73f72dee5" />
+
+<img width="400" alt="Captura de pantalla 2025-07-07 a las 13 41 35" src="https://github.com/user-attachments/assets/f452a028-2cc6-4312-855f-63217dfd737a" />
+
+**¿Cuál es la diferencia entre clasificación de imágenes y detección de objetos en imágenes?:** La clasificación de imágenes identifica qué objeto hay en una imagen completa, mientras que la detección de objetos localiza y clasifica múltiples objetos dentro de la imagen usando cajas delimitadoras.
+
+### 2.6. Analizar vídeos
+
+Azure Video Indexer es un servicio para:
+
+- Reconocimiento facial: detección de la presencia de personas individuales en la imagen. Se requiere la aprobación de acceso limitado .
+- Reconocimiento óptico de caracteres: lectura de texto en el vídeo.
+- Transcripción del discurso: creación de una transcripción de texto del diálogo hablado en el vídeo.
+- Temas : identificación de temas clave tratados en el vídeo.
+- Opinión : análisis de cómo son los segmentos positivos o negativos del vídeo.
+- Etiquetas : etiquetas que identifican temas o objetos clave en todo el vídeo.
+- Moderación de contenido : detección de temas adultos o violentos en el vídeo.
+- Segmentación de escena: desglose del vídeo en sus escenas constituyentes.
+
+**¿Que son Widgets de Azure Video Indexer?**: Podemos usarlos para reproducir, analizar y editar videos en nuestras propias interfaces HTML personalizadas.
+
+### 2.7. Desarrollo de una aplicación de IA generativa habilitada para la visión
+Es la mezcla entre Computer Visión, IA generativa y NLP, llamada interligencia artificial generativa multimodal, que admita no solo datos textuales, sino también datos de imágenes (y, en algunos casos, de audio), por lo que para utilizarlo el usuario debe enviar varias partes; contenido de texto y contenido de imágen.
+
+Se puede pasar la url de una imágen o como dato binario.
+
+### 2.8. Generación de imágenes con IA
+
+Los modelos de generación de imágenes son un modelo de IA generativo que puede crear datos gráficos a partir de la entrada de lenguaje natural. En pocas palabras, puede proporcionar al modelo una descripción y puede generar una imagen adecuada.
+
+Los parámetros de generación de imágenes son:
+- prompt: descripción de la imagen que se va a generar.
+- n: número de imágenes que se van a generar. DALL-E 3 solo admite n=1.
+- size: la resolución de las imágenes que se van a generar (1024x1024, 1792x1024 o 1024x1792 para DALL-E 3)
+- calidadOpcional: la calidad de la imagen (estándar o hd). El valor predeterminado es estándar.
+- styleOpcional: el estilo visual de la imagen (natural o vívido). El valor predeterminado es vívido.
 
 
 
