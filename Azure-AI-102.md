@@ -250,6 +250,17 @@ Los parámetros de generación de imágenes son:
 - styleOpcional: el estilo visual de la imagen (natural o vívido). El valor predeterminado es vívido.
 
 
+## Módulo 3: Desarrollo de soluciones de lenguaje natural en Azure
+
+### 3.1. Análisis de texto con Lenguaje de Azure AI
+
+Este servicio nos permite crear aplicaciones y servicios inteligenctes que extraen información semántica de textos y se puede usar para tareas como:
+- **Detección de idioma:** devuelve en formato JSON el lenguaje previsto y un valor que indica el nivel de confianza de la predicción. En textos con varios idiomas, devolverá el idioma predominante. Cuando el contenido es ambiguo devolverá un 0.
+- **Extracción de frases y palabras clave:** funciona mejor con documentos grandes pero máximo 5120 caracteres. Devuelve una lista JSON con las diferentes frases clave detectadas con indexación.
+- **Análisis de sentimiento o opiniones:** Se utiliza para evaluar cómo de positivo o negativo es un texto. Devuelve una clasificación positivo, negativo y neutro entre 0 y 1 para cada clasificación.
+- **Reconocimiento de entidades con nombre como entidades, personas, ubicaciones, fehca, hora, organizaciones, dirección, correo electrónico, URL:** devuelve un array JSON con todas las entidades que encuentre
+- **Vinculación de entidades:** La vinculación de entidades se puede usar para desambiguar entidades del mismo nombre haciendo referencia a un artículo de una base de conocimiento mediante Wikipedia, por ejemplo dar contexto en una instancia de la palabra "Venus" que puede hacer referencia al planeta o a la diosa de la mitología. Por ejemplo, "Vi Venus brillando en el cielo" está asociado con el vínculo https://en.wikipedia.org/wiki/Venus; mientras que "Venus, la diosa de la belleza" está asociada con https://en.wikipedia.org/wiki/Venus_(mythology)
+
 
 
 
