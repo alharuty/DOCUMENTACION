@@ -261,7 +261,21 @@ Este servicio nos permite crear aplicaciones y servicios inteligenctes que extra
 - **Reconocimiento de entidades con nombre como entidades, personas, ubicaciones, fehca, hora, organizaciones, dirección, correo electrónico, URL:** devuelve un array JSON con todas las entidades que encuentre
 - **Vinculación de entidades:** La vinculación de entidades se puede usar para desambiguar entidades del mismo nombre haciendo referencia a un artículo de una base de conocimiento mediante Wikipedia, por ejemplo dar contexto en una instancia de la palabra "Venus" que puede hacer referencia al planeta o a la diosa de la mitología. Por ejemplo, "Vi Venus brillando en el cielo" está asociado con el vínculo https://en.wikipedia.org/wiki/Venus; mientras que "Venus, la diosa de la belleza" está asociada con https://en.wikipedia.org/wiki/Venus_(mythology)
 
+### 3.2. Crear soluciones de respuesta a preguntas con Lenguaje de Azure AI
 
+La capacidad de respuesta a preguntas del servicio Azure AI Language facilita la creación de aplicaciones en las que los usuarios formulan preguntas utilizando lenguaje natural y reciben respuestas adecuadas.
+
+**Entender la respuesta a preguntas**: Azure AI Language incluye una funcinoalidad de respuesta a preguntas, que se puede alimentar mediante sitios web de nuestras preguntas frecuentes, archivos de texto estructurados, guias de usuario, pares de preguntas y respuestas, csv, JSON, etc.
+
+**Respuestas multiturno:** Permiten crear conversaciones más naturales y contextuales en una base de conocimiento, haciendo preguntas de seguimiento cuando la respuesta inicial no es suficiente. Esto permite guiar al usuario a través de varios pasos para llegar a la información precisa.
+
+<img width="300" height="508" alt="Captura de pantalla 2025-07-17 a las 18 59 30" src="https://github.com/user-attachments/assets/6bb856eb-a022-4781-91c9-136e0065a12f" />
+
+Después de crear y probar la base de conocimientos, podemos mejorar su rendimiento con el aprendizaje activo y definiendo sinónimos de forma manual o automática.
+
+### 3.3. Creación de un modelo de reconocimiento del lenguaje conversacional
+
+Dentro del área más amplia de NLP, el reconocimiento del lenguaje natural (NLU) se ocupa del problema de determinar el significado semántico del lenguaje natural, normalmente mediante el uso de un modelo de lenguaje entrenado.
 
 
 
