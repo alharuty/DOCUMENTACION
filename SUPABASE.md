@@ -22,7 +22,9 @@ Se abrirá una pestaña en el terminal conel formato postgres=>
   ```
   \copy public.tu_tabla TO 'tu_tabla.csv' CSV HEADER;
   ```
-
+>[!NOTE]
+>
+> Se guardará 1 único archivo con todos tus datos de la tabla
 
   ### DESCARGAR TABLA COMPLETA EN FORMATO .CSV DESDE SUPABASE (más de 1M datos)
 
@@ -83,3 +85,6 @@ echo "✅ Export terminado en: $OUT_DIR"
 ```
 ./export_tu_tabla.sh
 ```
+>[!NOTE]
+>
+> Se guardarán varios archivos en gormato .gz listos para ser descomprimidos
